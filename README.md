@@ -1,7 +1,7 @@
 # Payday2FontTools
 
 This tool helps creating Payday 2 font files. It's heavily based on
-the tutorial written by (MaxShouldier)[http://forums.lastbullet.net/showthread.php?tid=1285&pid=5489#pid5489].
+the tutorial written by [MaxShouldier](http://forums.lastbullet.net/showthread.php?tid=1285&pid=5489#pid5489).
 
 The tool depends on BMFont, which is released under Zlib license
 (compatible with GPL v3 license that this tool is released under).
