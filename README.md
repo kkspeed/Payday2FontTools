@@ -7,7 +7,8 @@ The tool depends on BMFont, which is released under Zlib license
 (compatible with GPL v3 license that this tool is released under).
 
 This repo is only for advanced users, i.e. if you want to compile this
-tool from source. Otherwise, please refer to the download branch to
+tool from source. Otherwise, please refer to the [download
+branch](https://github.com/kkspeed/Payday2FontTools/tree/download) to
 get latest binary release.
 
 ## Building Payday2FontTools
