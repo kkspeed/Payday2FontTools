@@ -14,6 +14,7 @@ Target "CreateDirectorySpec" (fun _ ->
     CreateDir (buildDir + "Output")
     CreateDir (buildDir + "StockFont")
     CopyRecursive "Utils" buildDir true |> ignore
+    CopyFile buildDir "LICENSE"
 )
 
 Target "Test" (fun _ ->
