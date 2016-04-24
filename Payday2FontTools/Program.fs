@@ -113,5 +113,20 @@ module Main =
               MoveDdsToTexture output
               this.Text <- "Payday2FontTools (Done!)"
 
+    let runForm () = new Window () |> Application.Run
+
+    [<EntryPoint>]
     [<STAThread>]
-    do new Window () |> Application.Run
+    let main argv =
+        if argv.Length >= 3
+        then let output = argv.[0]
+             argv.[2..]
+             |> Seq.map (fun f ->
+                  match GetReader f with
+                   | Some reader -> reader f
+                   | None -> failwith ("cannot identify filetype: " + f))
+             |> Seq.reduce FontRep.(<->)
+             |> FontIO.DisselFont.WriteDisselFont output
+             MoveDdsToTexture output
+        else runForm ()
+        0
