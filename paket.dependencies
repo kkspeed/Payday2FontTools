@@ -2,3 +2,4 @@ source https://nuget.org/api/v2
 nuget FSharp.Data
 nuget Magick.NET-Q16-AnyCPU
 nuget FAKE
+nuget GtkSharp
